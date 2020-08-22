@@ -2,11 +2,7 @@
 provider "aws" {
     access_key = ""
     secret_key = ""
-<<<<<<< HEAD:01-basico/02/main.tf
     region = ""
-=======
-    region = "us-east-1"
->>>>>>> 94c90cbd8fc1838cfd8339acdc00076d7dda1c81:01/main.tf
 }
 
 # Criacao de S3
@@ -34,14 +30,3 @@ resource "aws_s3_bucket_object" "object" {
     etag = md5(file("arquivo.txt"))
 
 }
-<<<<<<< HEAD:01-basico/02/main.tf
-=======
-
-output "bucket" {
-    value = aws_s3_bucket.b.id
-}
-
-output "etag" {
-    value = aws_s3_bucket_object.object.etag
-}
->>>>>>> 94c90cbd8fc1838cfd8339acdc00076d7dda1c81:01/main.tf
