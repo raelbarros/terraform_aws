@@ -12,7 +12,7 @@ variable "secret_key" {
 }
 
 variable "linux_ami" {
-    default = "ami-0f4aeaec5b3ce9152"
+    default = "ami-05655c267c89566dd"
 }
 
 variable "type" {
