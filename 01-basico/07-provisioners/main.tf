@@ -55,7 +55,7 @@ resource "aws_instance" "web" {
         }
     }
 }
-
+// Criando um arquivo local com o ip da instancia
 resource "null_resource" "null" {
     provisioner "local-exec" {
         command = "echo ${aws_instance.web.id}:${aws_instance.web.public_ip} >> public_ips.txt"
